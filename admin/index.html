@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <button id="logout">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="shoe-list">
+            <h2>Shoe List</h2>
+            <ul id="shoes"></ul>
+        </section>
+
+        <section id="add-edit">
+            <h2>Add/Edit Shoe</h2>
+            <form id="shoeForm">
+                <input type="text" id="shoeName" placeholder="Shoe Name" required>
+                <input type="text" id="shoeBrand" placeholder="Brand" required>
+                <button type="submit">Add/Edit Shoe</button>
+                <input type="hidden" id="shoeId">
+            </form>
+        </section>
+    </main>
+    <script src="js/admin.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
